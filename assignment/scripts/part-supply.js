@@ -62,9 +62,9 @@ for( let x of supplyChanges ){
 console.log('8. Showing supplyChanges with "while" loop');
 
 let i = 0;
-supplyChanges = [0,3,5,-6,0,7,11,25]
+supplyChanges = [3,5,-6,0,7,11,25]
 while (i <= supplyChanges.length - 1){
-  i++;
+
   if (supplyChanges[i] > 0){
     console.log(' Added ' + supplyChanges[i] + " parts. ");
   }
@@ -74,6 +74,7 @@ while (i <= supplyChanges.length - 1){
   if (supplyChanges[i] < 0){
     console.log(' Removed ' + supplyChanges[i] + ' Parts. ')
   }
+  i++;
 }
 
 
